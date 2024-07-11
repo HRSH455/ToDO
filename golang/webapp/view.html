@@ -1,0 +1,13 @@
+<h1> PRIORITY LIST </h1>
+<div>
+    {{/* The Number Of Things  To Be Done */}}
+    {{.count}} To Dos
+    <a href ="/new">
+        ADD THINGS TO DO
+    </a>
+</div>
+<div>
+    {{range .todos}}
+    <p>{{.}}</p>
+    {{end}}
+</div>
